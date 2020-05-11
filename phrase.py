@@ -8,7 +8,7 @@ class Phrase:
         self.max = len(self.phrase)
 
 
-    def __iter__(self):
+    '''def __iter__(self):
         self.n = 0
         return self
 
@@ -18,7 +18,7 @@ class Phrase:
             self.n += 1
             return result
         else:
-            raise StopIteration
+            raise StopIteration'''
 
 
     def display_phrase(self):
@@ -29,5 +29,11 @@ class Phrase:
 
 
     def contains_char(self, char):
-        if char in self.phrase:
-            char.guess()
+        count = 0
+        is_correct = False
+        while count < self.max:
+            if self.phrase[count] == char:
+                is_correct = True
+                self.phrase[count].guess()
+            count += 1
+        return is_correct
