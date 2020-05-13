@@ -19,3 +19,11 @@ class Character(str):
             return '  '
         else:
             return '_ '
+
+    def display_char_for_comparison(self):
+        if self.was_guessed == True:
+            return self.char
+        elif self.char == ' ':
+            return ' '
+        else:
+            return '_' 

@@ -8,19 +8,6 @@ class Phrase:
         self.max = len(self.phrase)
 
 
-    '''def __iter__(self):
-        self.n = 0
-        return self
-
-    def __next__(self):
-        if self.n <= self.max:
-            result = 2 ** self.n
-            self.n += 1
-            return result
-        else:
-            raise StopIteration'''
-
-
     def display_phrase(self):
         phrase_to_display = []
         for char in self.phrase:
@@ -37,3 +24,20 @@ class Phrase:
                 self.phrase[count].guess()
             count += 1
         return is_correct
+
+
+    # add this to display phrase later on or clean up somehow...
+    def check_phrase(self):
+        displayed_phrase = []
+        for char in self.phrase:
+            displayed_phrase.append(char.display_char_for_comparison())
+        phrase_joined = ''.join(displayed_phrase)
+        if ((''.join(self.phrase)) == (phrase_joined)):
+            return True
+        else:
+            return False
+
+
+    def reset_phrase(self):
+        for char in self.phrase:
+            char.was_guessed = False
