@@ -1,4 +1,3 @@
-# Create your Phrase class logic here.
 from character import Character
 
 class Phrase:
@@ -26,7 +25,7 @@ class Phrase:
         return is_correct
 
 
-    # add this to display phrase later on or clean up somehow...
+    # TODO: needs refractoring...
     def check_phrase(self):
         displayed_phrase = []
         for char in self.phrase:

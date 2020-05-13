@@ -1,5 +1,3 @@
-# Create your Character class logic in here.
-
 class Character(str):
 
     def __init__(self, char):
@@ -26,4 +24,4 @@ class Character(str):
         elif self.char == ' ':
             return ' '
         else:
-            return '_' 
+            return '_'
