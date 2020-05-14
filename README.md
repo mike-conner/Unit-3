@@ -1,5 +1,5 @@
 # Unit-3
-Phrase Hunters
+*Phrase Hunters*
 
 
 Phrase Hunters is a word guessing game. It uses Python and OOP (Object-Oriented Programming) approaches to select a phrase at random, hidden from the player. A player tries to guess the phrase by inputting individual characters.
