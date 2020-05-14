@@ -1,14 +1,14 @@
-# phrases for the game
-# must have a minimum of 5
-# using simple
+# phrases to be used for the game
+
 
 PHRASE_LIST = [
-  'WOW WOW',
-  'TEST TEST',
+  'BETTER LATE THAN NEVER',
+  'HANG IN THERE',
   'HELLO WORLD',
-  'BANANA PIE',
-  'APPLE SNAPPLE',
-#  'A DIAMOND IN THE ROUGH',
-#  'BEST OF BOTH WORLDS',
-#  'PIECE OF CAKE',
+  'A DIAMOND IN THE ROUGH',
+  'BEST OF BOTH WORLDS',
+  'PIECE OF CAKE',
+  'YOUR GUESS IS AS GOOD AS MINE',
+  'SO FAR SO GOOD',
+  'HANG IN THERE',
 ]

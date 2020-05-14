@@ -7,8 +7,8 @@ class Game:
     def __init__(self):
         self.guessed_letters = []
         self.lives = 5
-        self.phrase_list = [Phrase(phrase) for phrase in PHRASE_LIST]
-        self.correct_phrase = random.choice(self.phrase_list)
+        self.phrases = [Phrase(phrase) for phrase in PHRASE_LIST]
+        self.correct_phrase = random.choice(self.phrases)
 
 
     def game_welcome(self):
@@ -49,7 +49,7 @@ class Game:
     def reset_game(self):
         self.correct_phrase.reset_phrase()
         self.lives = 5
-        self.correct_phrase = random.choice(self.phrase_list)
+        self.correct_phrase = random.choice(self.phrases)
         self.guessed_letters = []
 
 
