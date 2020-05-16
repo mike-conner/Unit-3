@@ -1,6 +1,5 @@
 # phrases to be used for the game
 
-
 PHRASE_LIST = [
   'BETTER LATE THAN NEVER',
   'HANG IN THERE',

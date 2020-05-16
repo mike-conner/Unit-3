@@ -1,3 +1,5 @@
+
+
 class Character(str):
     """
     This class is for storing a single character of a phrase.
@@ -11,9 +13,8 @@ class Character(str):
         """
         The constructor for Character.
 
-        Attributes:
+        Parameters:
             char (character): The character to be stored.
-            was_guessed (bool): Whether the user guessed the char yet.
         """
 
         super().__init__()
